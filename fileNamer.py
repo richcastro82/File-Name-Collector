@@ -2,8 +2,9 @@
 #CRAWL DIRECTORY AND COLLECT FILE NAMES
 
 import os
+import pathlib
 import pandas as pd
-path='C:/kader'
+path=pathlib.Path().resolve()
 files=os.listdir(path)
 yourFiles=[]
 for f in files:
